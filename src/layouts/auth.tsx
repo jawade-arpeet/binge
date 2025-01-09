@@ -5,7 +5,7 @@ function AuthLayout() {
     <main
       className={"h-screen w-screen flex flex-col items-center justify-center"}
     >
-      <section className={"w-1/2 max-w-sm"}>
+      <section className={"w-4/5 max-w-sm"}>
         <Outlet />
       </section>
     </main>
