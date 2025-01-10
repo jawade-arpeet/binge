@@ -4,6 +4,7 @@ import Home from "./pages/home";
 import AuthLayout from "./layouts/auth.tsx";
 import SignInPage from "./pages/sign-in.tsx";
 import ConfirmEmailPage from "./pages/confirm-email.tsx";
+import SignUpPage from "./pages/sign-up.tsx";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route index path={"/"} element={<Home />} />
         <Route element={<AuthLayout />}>
+          <Route path={"/sign-up"} element={<SignUpPage />} />
           <Route path={"/sign-in"} element={<SignInPage />} />
           <Route path={"/confirm-email"} element={<ConfirmEmailPage />} />
         </Route>
