@@ -7,10 +7,16 @@
 
 @theme {
   --font-inter: "Inter", sans-serif;
+  --color-background: var(--color-stone-100);
+  --color-background-accent: var(--color-stone-200);
+  --color-foreground: var(--color-stone-800);
+  --color-foreground-accent: var(--color-stone-950);
+  --color-primary: var(--color-lime-400);
+  --color-primary-accent: var(--color-lime-500);
 }
 
 @layer base {
   html {
-    @apply font-inter min-h-screen antialiased;
+    @apply font-inter bg-background text-foreground min-h-screen antialiased;
   }
 }
