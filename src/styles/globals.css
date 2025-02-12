@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --color-background: theme("colors.zinc.950");
+        --color-foreground: theme("colors.zinc.50");
+        --color-foreground-muted: theme("colors.zinc.400");
+        --color-primary: theme("colors.red.600");
+        --color-primary-foreground: theme("colors.zinc.50");
+        --color-primary-accent: theme("colors.red.700");
+    }
+}
+
+@layer base {
+    html {
+        @apply min-h-screen antialiased bg-background text-foreground;
+    }
+}

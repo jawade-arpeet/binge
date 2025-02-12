@@ -7,7 +7,18 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: "var(--color-background)",
+        foreground: "var(--color-foreground)",
+        "foreground-muted": "var(--color-foreground-muted)",
+        primary: {
+          DEFAULT: "var(--color-primary)",
+          foreground: "var(--color-primary-foreground)",
+          accent: "var(--color-primary-accent)",
+        },
+      },
+    },
   },
   plugins: [],
 } satisfies Config;
