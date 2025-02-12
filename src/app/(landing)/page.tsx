@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import authWithGoogle from "@/actions/auth-with-google";
+
 import Button from "@/components/ui/button";
 
 const Page = () => {
@@ -10,7 +12,9 @@ const Page = () => {
           <Link href={"/"} className={"text-xl font-semibold"}>
             binge
           </Link>
-          <Button>Create Account</Button>
+          <form action={authWithGoogle}>
+            <Button type="submit">Create Account</Button>
+          </form>
         </nav>
       </header>
     </main>
